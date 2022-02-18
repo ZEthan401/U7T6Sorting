@@ -75,9 +75,9 @@ public class Sort
     int count = 0;
     for (int j = 1; j < words.size(); j++)
     {
-      String Temp = word.get(j);
+      String temp = words.get(j);
       int possibleIndex = j;
-      while (possibleIndex > 0 && temp.comparedTo(words.get(possibleIndex - 1)) < 0)
+      while (possibleIndex > 0 && temp.compareTo(words.get(possibleIndex - 1)) < 0)
       {
         words.set(possibleIndex, words.get(possibleIndex - 1));
         possibleIndex--;
